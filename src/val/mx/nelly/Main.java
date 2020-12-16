@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("TEST");
-        HTTPServer httpServer = new HTTPServer(8000);
+        TicTacToeServer httpServer = new TicTacToeServer();
 
         System.out.println(httpServer.isOpen());
 
-        Client client = new EchoClient("10.16.5.4",8000);
+        EchoClient client = new EchoClient("10.16.5.4",16785);
 
         Scanner s = new Scanner(System.in);
 
