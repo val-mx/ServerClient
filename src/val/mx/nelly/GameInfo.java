@@ -3,15 +3,15 @@ package val.mx.nelly;
 import java.util.LinkedList;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static val.mx.nelly.TicTacToeServer.MAX_PLAYERS;
+import static val.mx.nelly.SchnickSchnackSchnuckServer.MAX_PLAYERS;
 
 public class GameInfo {
 
 
-    private final TicTacToeServer server;
+    private final SchnickSchnackSchnuckServer server;
     private final LinkedList<PlayerInfo> players;
 
-    public GameInfo(TicTacToeServer server) {
+    public GameInfo(SchnickSchnackSchnuckServer server) {
         players = new LinkedList<>();
         this.server = server;
     }

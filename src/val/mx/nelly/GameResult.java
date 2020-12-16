@@ -7,13 +7,13 @@ public class GameResult {
         OK
     }
 
-    private GameInfo.PlayerInfo loser;
-    private GameInfo.PlayerInfo winner;
-    private Result result;
+    private final GameInfo.PlayerInfo player1;
+    private final GameInfo.PlayerInfo player2;
+    private final Result result;
 
-    public GameResult(GameInfo.PlayerInfo loser, GameInfo.PlayerInfo winner, Result result) {
-        this.loser = loser;
-        this.winner = winner;
+    public GameResult(GameInfo.PlayerInfo player2, GameInfo.PlayerInfo player1, Result result) {
+        this.player1 = player1;
+        this.player2 = player2;
         this.result = result;
     }
 
@@ -21,11 +21,11 @@ public class GameResult {
         return result;
     }
 
-    public GameInfo.PlayerInfo getLoser() {
-        return loser;
+    public GameInfo.PlayerInfo getPlayer1() {
+        return player1;
     }
 
-    public GameInfo.PlayerInfo getWinner() {
-        return winner;
+    public GameInfo.PlayerInfo getPlayer2() {
+        return player2;
     }
 }

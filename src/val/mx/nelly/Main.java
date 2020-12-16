@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        TicTacToeServer httpServer = new TicTacToeServer();
+        SchnickSchnackSchnuckServer httpServer = new SchnickSchnackSchnuckServer();
 
         System.out.println(httpServer.isOpen());
 
@@ -18,12 +18,5 @@ public class Main {
 
             client.send(str);
         }
-//
-//        EchoClient client = new EchoClient("nellysachs.de",8000);
-//        System.out.println(client.isConnected());
-
-
-
-
     }
 }
